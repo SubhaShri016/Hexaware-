@@ -1,6 +1,7 @@
 package com.java.loanmanagement.model;
 
-public class Loan { /
+public class Loan {
+    private int loanId; // **Added declaration for loanId field**
     private Customer customer;
     private double principalAmount;
     private double interestRate;
@@ -8,13 +9,13 @@ public class Loan { /
     private String loanType;
     private String loanStatus;
 
-    public Loan() {  
+    public Loan() {
     }
 
     public Loan(int loanId, Customer customer, double principalAmount, double interestRate, int loanTerm, String loanType, String loanStatus) {
         this.loanId = loanId;
         this.customer = customer;
-        this.principalAmount= principalAmount;
+        this.principalAmount = principalAmount; // Corrected assignment
         this.interestRate = interestRate;
         this.loanTerm = loanTerm;
         this.loanType = loanType;
@@ -44,7 +45,7 @@ public class Loan { /
     }
 
     public void setPrincipalAmount(double principalAmount) {
-        this.principalAmount= principalAmount;
+        this.principalAmount = principalAmount; // Corrected assignment
     }
 
     public double getInterestRate() {
